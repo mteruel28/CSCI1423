@@ -1,27 +1,43 @@
 #!/usr/bin/perl
 
 #Variable Declaration
-$name="name.txt"; 
-
-#Opening File to Reading
-open(INFILE,'<', $name)||die("nope $! \n");
+@names,$name,$red;
+ 
+#Reading in a file
+open(INFILE,'<','name.txt')||die("nope $! \n");
 
 #Sipping from a File
 while($name=<INFILE>) {
 chomp($name);
-print "your name is. \n";
+print "your name is $name \n";
 }
 
-#Signing up
-print" would you like to signup?\n";
+#Closing File
+close(INFILE);
+
+#Assigning a File name to a variable
+$red="name.txt";
 
 
-#Reading from the file
-open(INFILE,'<','name.txt') || die("Cannot open file. $! \n");
-
+#Opening file for reading
+open(FILE1,'<',$red) || die("Cannot open file. $! \n");
 
 #Name Input
-print "What is your name?\n";
+print " do you want to sign up? \n";
 $name=<>;
 chomp($name);
-print "Your name is ",$name,"\n";
+print" your name is $name\n";
+
+#Closing a file
+close(INFILE);
+
+
+#Writing out to a file
+open (OUTFILE,'>>','name.txt')|| die("goodluck. $! \n");
+print OUTFILE <STDIN>;
+
+#Slurping in a file
+chomp(@names=<FILE1>);
+print "@names\n";
+close(FILE1);
+
