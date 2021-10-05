@@ -1,0 +1,25 @@
+#!/usr/bin/perl
+
+#Variable Declaration
+$name="name.txt"; 
+
+#Opening File to Reading
+open(FILE1,'<', $name)||die("nope $! \n");
+
+open(OUTFILE,'>',"name.txt")|| die("Goodluck! $! \n");
+print OUTFILE "Would you like to signup?\n";
+
+#Sipping from a File
+while($name=<INFILE>) {
+chomp($name);
+print "your name is. \n";
+}
+
+#Reading from the file
+open(INFILE,'<','name.txt') || die("Cannot open file. $! \n");
+
+#Name Input
+print "What is your name?\n";
+$name=<>;
+chomp($name);
+print "Your name is ",$name,"\n";
