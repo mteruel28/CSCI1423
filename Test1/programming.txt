@@ -1,0 +1,36 @@
+1. describe 3 types of data types in perl and their usage
+Scalars- allows a single unit of data to be stored under one variable.
+ A scalar can be a number,string, or a reference.
+
+Arrays -allows a bunch of Scalars to be organized in a list that can be 
+access through a numerical index
+
+Hashes - a group of key-value pairs, where the keys to every value are unique
+allows an association between the two pairs such as a username to password 
+
+2. Describe the difference between a strongly and loosely typed language and
+ give an example of each
+
+A strongly typed language is a programming language that requires a 
+declaration of a data type  that will be placed in a certain variable
+Examples of a strongly type language : C++ , Java
+
+A loosely typed language is a programming language that does not require a
+declaration of a data type in a certain variable
+Examples of a loosely type language : Perl , Python
+
+3.Describe the difference between stacks and queues and give an example of each
+A stack is a data structure that organizes data vertical linearly and contains data that is inserted
+ from top of the list and pushed out from the bottom of the list.
+ A stack follows the principle that is LIFO which means last in first out and occur at the top of the list.
+ A good example of a stack is when grocery workers are restocking an item, when an item is restock the first item at the list is pushed out.
+ 
+A queue is a data structure that organizes data horizontal linearly and  contains that data is  inserted from the 
+bottom of the list and pushed out from the top of the list.The queue follow the principle that is FIFO which  means first in first out. A good example is a line at an amusement park ride; first people who come in line are the first people to exit after the ride is over.
+
+4. Describe git and how it is used/useful in the development of programs and technical systems.
+Git is a an open source project that allows programmers to store versions of sourced code and keep track of versions of sourced code
+of a project. It allows programmers to efficiently store and save their projects. 
+
+It is used to save coding projects in
+ and it is useful in allowing projects to keep track of metadata concerning a code. It is usually saved in a git repository where code is organized for specific projects.
