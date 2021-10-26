@@ -8,3 +8,4 @@ def mail2():
     first =input("Your first name please:")
     last =input("Your last name too:")
     print("Your TWU email is:"+ first(0)+last+"@twu.edu")
+mail2()
