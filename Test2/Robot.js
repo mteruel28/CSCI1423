@@ -1,3 +1,5 @@
+Miguel and Andrea
+
 var color1 = { r: 255, g: 150, b: 148 };
 var color0 = { r: 255, g: 115, b: 200 };
 var str0 = 'Hello!';
